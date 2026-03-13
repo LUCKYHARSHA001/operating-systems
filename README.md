@@ -45,6 +45,16 @@
   - Kernel I/O Subsystem
   - Device Drivers
 
-
-
 ---
+
+### Fundementals:
+  1. Evolution of OS:
+    |Era | Focus | Key Technology|
+    |1940s | Bare Machine	| Switches & Wires|
+    |1950s | Job Automation |	Batch Processing|
+    |1960s | CPU Utilization | Multiprogramming|
+    |1970s | User Interaction | Time-Sharing (UNIX)|
+    |1980s | Accessibility | GUI (Windows/Mac)|
+    |Modern | Connectivity | Mobile & Cloud|
+  
+  2. System Components: 
