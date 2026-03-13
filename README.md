@@ -74,3 +74,20 @@
   Resource Maangaement:It decides which proccess gets the cpu and RAM it can use and handles data storage  
   Priviliged Mode: kernel runs in **Kernel Mode** means it can do any thing in the system and this is a protected area if the normal app(user mode) crashes, the system still stays up and if the kernel crashes the blue screen appears
 
+### 1.3 OS Architectures:
+  - Monolithic Kernels:  
+  in this the entire operating system including device drivers, file systems, and network stacks—runs in a single address space within the kernel.  
+  mechanism: Components communicate through direct function calls.  
+  adv: High performance  
+  dis: f one driver crashes, the entire system will go stop
+  - Microkernels:  
+  in this it minimizes the kernel to the absolute essentials: address space management, thread scheduling, and Inter-Process Communication and remaining the drivers and file systems in user mode  
+  mechanism: When a user application needs a file, the microkernel acts as a postman  
+  adv: High reliability and security.
+  dis: Slower than monolithic kernels
+  - Hybrid Kernels:
+  in this it tries to combine the speed of a monolithic kernel with the modularity of a microkernel.  
+  mechanism: It keeps a microkernel-like structure but allows **servers** to run inside the kernel's address space.
+  adv: Balanced performance and stability.
+
+---
