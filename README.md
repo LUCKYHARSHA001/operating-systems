@@ -61,12 +61,4 @@
 | Modern | Connectivity | Mobile & Cloud |
 
 ### 1.2 System Components:
-
-| Component | Responsibility | Example Tasks |
-| :--- | :--- | :--- |
-| **Process Management** | Managing active programs | Creation, Scheduling, Termination |
-| **Memory Management** | Tracking RAM usage | Allocation, Paging, Segmentation |
-| **File Management** | Organizing data on disk | CRUD operations, Permissions |
-| **I/O Management** | Hardware communication | Buffering, Caching, Device Drivers |
-| **Network Management** | Resource sharing | Routing, Packet handling |
-| **Protection & Security** | Access control | User Auth, Malware protection |
+  
