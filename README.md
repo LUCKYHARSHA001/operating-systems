@@ -90,4 +90,15 @@
   mechanism: It keeps a microkernel-like structure but allows **servers** to run inside the kernel's address space.
   adv: Balanced performance and stability.
 
+|Feature| Monolithic | Microkernel | Hybrid|
+| :--- | :--- | :--- | :---|
+| Kernel Size |	Large |	Very Small |	Medium |
+| Execution |	All in Kernel Mode |	Mostly User Mode |	Mixed|
+| Stability |	Lower (One fail = Crash) |	High (Isolate fails)	| Medium/High |
+| Performance	| Maximum	| Lower (IPC overhead)	| Balanced |
+
+### 1.4 Boot Process :  
+
+
+
 ---
