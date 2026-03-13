@@ -48,7 +48,7 @@
 ---
 
 ### Fundementals:
-  1. Evolution of OS:
+ Evolution of OS:
     |Era | Focus | Key Technology| 
     |----------|-----------------|----------------|
     |1940s | Bare Machine	| Switches & Wires|
