@@ -125,5 +125,5 @@
   4. Ready: the process is waiting to assigned to a processor
   5. Terminated: The process has finished execution  
     
-  ![Alt text](./assests/process_state.png)  
+  ![Alt text](./assets/process_state.png)  
   
