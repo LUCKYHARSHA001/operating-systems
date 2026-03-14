@@ -136,4 +136,33 @@
   6. Acounting Information: this has the amount of **CPU and realtime used** etc.  
   7. I/O status information: this has the list of input output devices allocated to the process, a list of open files etc  
 
-  ![Alt Text](./assets/pcb.png)
+  ![Alt Text](./assets/pcb.png)  
+
+  ### 2.2 Threads:  
+  In operating System thread is the smallest executable unit in the process and it is the actual entinty that executes the code  
+  - Process vs Thread:  
+  process:It is the heavy execution unit that has its own address space  
+  Thread: It is called as light-weight process exists inside the process and shares its data or resources  
+      - Shared Resources: Code section, data section, and OS resources
+      - Unique Resources: Each thread has its own Program Counter (PC), Stack, and Register Set.
+  
+  - Types of Threads:  
+  User-Level Threads:These are the threads managed by the user-sspace library unlike the operating system kernel, and the kernel is unaware of these existance and sees it as a single thread.  
+  Kernel-Level Thread:These are the threads directly managed by the kernel operating system.  
+
+  - Multithreading Models: In os the architects use different mapping models for the gap between user level threads and kernel level threads  
+  |Model|Description|
+  |:---|:---|
+  |Many-to-One|Many user threads map to one kernel thread. If one blocks, all block|
+  |One-to-One|Each user thread maps to a kernel thread. Provides best concurrency|
+  |Many-to-Many|Many user threads are multiplexed to a smaller or equal number of kernel threads.|
+
+  - Benefits of Multithreading:  
+  Responsiveness: application can be interactive even it already doing another work  
+  Resource Sharing: Threads share memory by default, making communication easier than Inter-Process Communication (IPC)  
+  Economy:Creating and context-switching threads is much "cheaper" than processes.
+
+  - Critical Issues in Threading:  
+  Race Conditions: when the two or more threads try to access the shared data at the same time the outcome is based on the order of execution  
+  Deadlocks: As the name says its a case where **Thread A waits for resource hold by Thread B** and **Thread B waits for the resource hold by Thread A** leading to the problem where the threading stucks with out moving  
+  Context Switching Overhead: While lighter than processes, switching between too many threads still consumes CPU cycles
