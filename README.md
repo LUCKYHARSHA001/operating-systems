@@ -126,4 +126,14 @@
   5. Terminated: The process has finished execution  
     
   ![Alt text](./assets/process_state.png)  
-  
+  - Process Control Block:  
+  In OS each process is represented by a process control block(PCB) which is also known as task control Block . it has many specific process blocks like  
+  1. Process state: the state may be new,ready,running,waiting.....  
+  2. Program counter:This indicates the address of the next instruction to be executed for this process.  
+  3. CPU Registers: This is used when an interrupt occours  it allows the process to be continued correctly afterward when it rescheduled to run.  
+  4. CPU Scheduling Information: This includes the process priority, pointers to scheduling queues etc  
+  5. Memory management information: it stores the information like page tables, segment tables etc based on the memory system  
+  6. Acounting Information: this has the amount of **CPU and realtime used** etc.  
+  7. I/O status information: this has the list of input output devices allocated to the process, a list of open files etc  
+
+  ![Alt Text](./assets/pcb.png)
