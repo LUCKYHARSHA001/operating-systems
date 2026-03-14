@@ -168,24 +168,24 @@
   Context Switching Overhead: While lighter than processes, switching between too many threads still consumes CPU cycles
 
   ### 2.3 CPU scheduling:
-    Normally in a System with a single CPU core only one process can run at a time and other processes must wait until the CPU's core is free and thenn it moves to next process in thee mean time while in the process is executing it will wait for some time for the completion of I/O request etc which makes the **CPU sits idle** and all the waiting time is wasted.
-    So we came up with a solution called **MultiProgramming**  
-    Multiprogramming: In this we use this time productively by in that waiting time instead of making the system wait idlely we will let another proccess to do its thing in that waiting time and this way continues as it keeps the CPU busy to the fullest  
-    So in CPU scheduling the CPU will select a process from the processes in the memory that are ready to executed and allocates the cpu to that process and we should remeber that **ready queue may follow First-in First-out(FIFO)queue or priority queue or tree etc..  
-    So the CPU-scheduling decisions will takes place under 4 conditions  
-    1. when a process switches from running state to waiting state
-    2. when a process Terminates
-    3. when a process switches from running state to ready state
-    4. when a process switches from waiting state to ready state
+  Normally in a System with a single CPU core only one process can run at a time and other processes must wait until the CPU's core is free and thenn it moves to next process in thee mean time while in the process is executing it will wait for some time for the completion of I/O request etc which makes the **CPU sits idle** and all the waiting time is wasted.
+  So we came up with a solution called **MultiProgramming**  
+  Multiprogramming: In this we use this time productively by in that waiting time instead of making the system wait idlely we will let another proccess to do its thing in that waiting time and this way continues as it keeps the CPU busy to the fullest  
+  So in CPU scheduling the CPU will select a process from the processes in the memory that are ready to executed and allocates the cpu to that process and we should remeber that **ready queue may follow First-in First-out(FIFO)queue or priority queue or tree etc..  
+  So the CPU-scheduling decisions will takes place under 4 conditions  
+  1. when a process switches from running state to waiting state
+  2. when a process Terminates
+  3. when a process switches from running state to ready state
+  4. when a process switches from waiting state to ready state
 
-    So in this the first two conditions comes under **Preemptive Scheduling** and third and fourth conditions comes under **non-Preemptive Scheduling**  
-    In non-preemption Scheduling once the CPU is been allocated to a process the process keeps the CPU until it releases it either by termination or by switching to waiting state  
-    In preemptive it can result in race conditions when the data is shared among several processes
+  So in this the first two conditions comes under **Preemptive Scheduling** and third and fourth conditions comes under **non-Preemptive Scheduling**  
+  In non-preemption Scheduling once the CPU is been allocated to a process the process keeps the CPU until it releases it either by termination or by switching to waiting state  
+  In preemptive it can result in race conditions when the data is shared among several processes
 
-    - Dispatcher:
-    It is a component in CPU-scheduling used to give control of the CPU's core to the process selected by CPU scheduler and it also do things like
-     - switching context from one process to another
-     - Switching to user mode
-     - Jumping from proper location in the user program to resume that program
-    The time it takes for the dispatcher to stop one process and start another running is known as dispatch latency  
+  - Dispatcher:
+  It is a component in CPU-scheduling used to give control of the CPU's core to the process selected by CPU scheduler and it also do things like
+    - switching context from one process to another
+    - Switching to user mode
+    - Jumping from proper location in the user program to resume that program
+  The time it takes for the dispatcher to stop one process and start another running is known as dispatch latency  
     
