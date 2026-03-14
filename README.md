@@ -102,3 +102,20 @@
 
 
 ---
+
+## 2. Process Management
+
+### 2.1 Process:  
+  **Mainly the process is known as the program in execution** .  
+  The layout of process in memory
+  ![Alt text](./assets/layout_of_proceess.png)  
+  1. Text: the executable code
+  2. Data: the global variables
+  3. Heap: memory that dynamically allocated during program run time
+  4. Stack: temporary data storage when invoking functions(eg: local variables etc..)  
+  We can observe that the text and data sections are fixed while heap and stack sections are not because they can grow dynamically during program execution.  
+  A program becomes an process when an executable file is loaded into memory.  
+  Even if the two processes may associated with the same program they are considered as two seperate execution sequence.
+
+  - Process State:  
+  As a process executes, its state changes. the state of process is defined in part by the current activity of that process.
