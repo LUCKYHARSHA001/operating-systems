@@ -100,7 +100,6 @@
 ### 1.4 Boot Process :  
 
 
-
 ---
 
 ## 2. Process Management
@@ -119,3 +118,12 @@
 
   - Process State:  
   As a process executes, its state changes. the state of process is defined in part by the current activity of that process.
+  In this there are states  
+  1. New: the process is being created
+  2. Running: Instructions are being executed  
+  3. Waiting: the process is waiting for event(ex: I/O completion of signal)  
+  4. Ready: the process is waiting to assigned to a processor
+  5. Terminated: The process has finished execution  
+    
+  ![Alt text](./assests/process_state.png)  
+  
