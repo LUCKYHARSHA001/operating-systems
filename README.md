@@ -151,11 +151,11 @@
   Kernel-Level Thread:These are the threads directly managed by the kernel operating system.  
 
   - Multithreading Models: In os the architects use different mapping models for the gap between user level threads and kernel level threads  
-  |Model|Description|
-  |:---|:---|
-  |Many-to-One|Many user threads map to one kernel thread. If one blocks, all block|
-  |One-to-One|Each user thread maps to a kernel thread. Provides best concurrency|
-  |Many-to-Many|Many user threads are multiplexed to a smaller or equal number of kernel threads.|
+    |Model|Description|
+    |:---|:---|
+    |Many-to-One|Many user threads map to one kernel thread. If one blocks, all block|
+    |One-to-One|Each user thread maps to a kernel thread. Provides best concurrency|
+    |Many-to-Many|Many user threads are multiplexed to a smaller or equal number of kernel threads.|
 
   - Benefits of Multithreading:  
   Responsiveness: application can be interactive even it already doing another work  
