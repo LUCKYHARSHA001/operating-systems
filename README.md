@@ -188,4 +188,25 @@
     - Switching to user mode
     - Jumping from proper location in the user program to resume that program
   The time it takes for the dispatcher to stop one process and start another running is known as dispatch latency  
+  ### 2.4 Inter Process Communication:  
+  while processes are executing in a os it will be either **independent or cooperating process**  
+  Independent Process: it is known as independent if it does **not share data** with other processes while executing.
+  Co-operating Process: in this it can share data to other processs which lead to effect other process while executing.  
+  This Co-operating process require a mechanism that helps to communicate and exchange data between them and this is known as IPC(Inter Process Communication).  
     
+  In IPC there are 2 main models:
+  1. Shared memory: it is a region of memory that is shared by co-operating processes is established    
+  2. message passing:in this the communication takes place by exchanging messaging between the co-operating systems.  
+  **IPC in Shared memory:**  
+  As we known the os normally tries to prevent one process to access other access so in shared memory we will get a region means address space of the process creating and then the process which wish to communicaate will come and attach to the address space leading communication or sharing data between processes  
+  And also there own processes are responsible to makesure that no two process write at the same location simultaneously  
+  **IPC in Message-passing:**  
+  This provides a mechanism to communicate and sychronize between them.  
+  Commonly a message will be either have a fixed size or variable size  
+  **If fixed size:** then the system level implementation is straight forward but the programming this task is difficult.  
+  **If Variable Size:** then the system level implementation is difficult and programming this task is easy.  
+  But for 2 processes like P and Q to communicate between them then there must be a communication link that is established between them.for this we connect them we have several methods for logically implementing a link  
+  1. Direct or indirect Communication  
+  2. Synchronous or Asynchronous Communication  
+  3. Automatic or Explicit Buffering  
+  
