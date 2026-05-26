@@ -206,7 +206,7 @@
   **If fixed size:** then the system level implementation is straight forward but the programming this task is difficult.  
   **If Variable Size:** then the system level implementation is difficult and programming this task is easy.  
   But for 2 processes like P and Q to communicate between them then there must be a communication link that is established between them.for this we connect them we have several methods for logically implementing a link  
-  1. Direct or indirect Communication  
-  2. Synchronous or Asynchronous Communication  
-  3. Automatic or Explicit Buffering  
+    1. Direct or indirect Communication  
+    2. Synchronous or Asynchronous Communication  
+    3. Automatic or Explicit Buffering  
   
