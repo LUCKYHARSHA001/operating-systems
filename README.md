@@ -212,9 +212,8 @@
   ---
 ## 3. Process Synchronization
   ### critical-section problem: 
-    A critical section is a peice of code that accesses a shared resource like a global variable, a file or a db that must not be accessed by more than one thread at a time 
-    -> to solve this problem any algorithm or solution must follow  strict rules:
-    1. Mutual Exclution: If process p is executing in its critical section, then no other processes can be executing in their critical sections for that same shared resource. Only one thread allowed at a time.
-    2. Progress: If no process is currently executing in its critical section, and some processes want to enter, only the processes that are not executing in their "remainder sections" (the rest of their code) can participate in deciding which process gets to enter next. Furthermore, this selection cannot be postponed indefinitely.
-    3. Bounded Waiting: There exists a bound or limit to the no of times a process can use critical section while other process have a request to have the critical section and this continues until the critical section is now free by 2nd one
-    
+  A critical section is a peice of code that accesses a shared resource like a global variable, a file or a db that must not be accessed by more than one thread at a time 
+  -> to solve this problem any algorithm or solution must follow  strict rules:
+  1. Mutual Exclution: If process p is executing in its critical section, then no other processes can be executing in their critical sections for that same shared resource. Only one thread allowed at a time.
+  2. Progress: If no process is currently executing in its critical section, and some processes want to enter, only the processes that are not executing in their "remainder sections" (the rest of their code) can participate in deciding which process gets to enter next. Furthermore, this selection cannot be postponed indefinitely.
+  3. Bounded Waiting: There exists a bound or limit to the no of times a process can use critical section while other process have a request to have the critical section and this continues until the critical section is now free by 2nd one
